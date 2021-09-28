@@ -2,6 +2,18 @@
 import './App.css';
 
 function App() {
+  let person={
+    name: " Sunn ",
+    id:"20301281",
+    job:"programmer",
+    address:"Dhaka"
+  }
+
+  let style={
+    color: "red",
+    backgroundColor: "gray"
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -9,14 +21,10 @@ function App() {
         <p>
           Edit done here !!  <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+        <p> my first react paragraph</p>
+        <h1 style={{color: "goldenrod",backgroundColor: "pink"}}>why {2+4*43%2}</h1>
+        <h3  className="" style={style} >{person.name+" : "+person.id}</h3>
       </header>
     </div>
   );
